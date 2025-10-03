@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Patrick+Hand&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Quicksand', sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-handwriting {
+    font-family: 'Patrick Hand', cursive;
+  }
+
+  .diary-background {
+    background-color: #f5f1e8;
+    background-image:
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 31px,
+        rgba(200, 180, 150, 0.15) 31px,
+        rgba(200, 180, 150, 0.15) 33px
+      ),
+      linear-gradient(
+        to right,
+        #f5f1e8 0%,
+        #f9f6ed 50%,
+        #f5f1e8 100%
+      );
+    background-size: 100% 33px, 100% 100%;
+  }
+
+  .diary-page {
+    background: linear-gradient(to bottom, #fff9e6 0%, #ffffff 50%, #fff9e6 100%);
+    box-shadow:
+      0 2px 4px rgba(0, 0, 0, 0.1),
+      inset 0 0 40px rgba(255, 235, 180, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    position: relative;
+  }
+
+  .diary-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 40px;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(255, 100, 100, 0.3) 10%,
+      rgba(255, 100, 100, 0.3) 90%,
+      transparent
+    );
+  }
+
+  @media (max-width: 768px) {
+    .diary-page::before {
+      left: 20px;
+    }
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f1e8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4c5a9;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c4b599;
+}
