@@ -5,6 +5,7 @@ import HomePage from './components/HomePage';
 import AboutPage from './components/AboutPage';
 import ExperiencePage from './components/ExperiencePage';
 import ProjectsPage from './components/ProjectsPage';
+import ExtracurricularsPage from './components/ExtracurricularsPage';
 import SkillsPage from './components/SkillsPage';
 import ContactPage from './components/ContactPage';
 
@@ -21,6 +22,8 @@ function App() {
         return <ExperiencePage />;
       case 'projects':
         return <ProjectsPage />;
+      case 'extracurriculars':
+        return <ExtracurricularsPage />;
       case 'skills':
         return <SkillsPage />;
       case 'contact':

@@ -1,8 +1,34 @@
 import React from 'react';
-import { portfolioData } from '../data/portfolioData';
 import { Briefcase, Calendar } from 'lucide-react';
 
 export default function ExperiencePage() {
+  const experience = [
+    {
+      role: "Research Intern",
+      organization: "Delhi Technological University (DTU) - Calibre Program",
+      period: "June 2025 – Present",
+      description: "Co-authoring a research paper on the clinical relevance of XAI techniques for distinguishing melanoma from benign nevi using dermoscopic images. Working under Dr. Sudhir (IGDTUW) and Prof. Rahul Katarya (DTU)."
+    },
+    {
+      role: "Full Stack Development Intern",
+      organization: "IGDTUW - AI-DS Dept.",
+      period: "June 2025 – Present",
+      description: "Developing an AI-powered web application under Dr. Dripty Tripathi's mentorship, focused on controlling binge-eating."
+    },
+    {
+      role: "Mentee - Mobile Development (Flutter)",
+      organization: "GDG on Campus IGDTUW",
+      period: "October 2024 – March 2025",
+      description: "Selected mentee for learning mobile development (Flutter) under GDG's mentorship program. Built mini-projects, such as To-Do and Weather apps, to get hands-on experience."
+    },
+    {
+      role: "Scholar",
+      organization: "SheFi Season 12",
+      period: "October 2024 – December 2024",
+      description: "Completed a curated curriculum in blockchain, web3, and fintech as part of a women-led global upskilling cohort."
+    }
+  ];
+
   return (
     <div className="min-h-screen p-4 py-24">
       <div className="max-w-4xl mx-auto">
@@ -16,7 +42,7 @@ export default function ExperiencePage() {
           </h2>
 
           <div className="space-y-6">
-            {portfolioData.experience.map((exp, index) => (
+            {experience.map((exp, index) => (
               <div
                 key={index}
                 className="relative p-6 bg-white rounded-2xl border-2 border-gray-800 shadow-lg hover:shadow-2xl transition-all"

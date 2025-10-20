@@ -1,6 +1,5 @@
 import React from 'react';
-import { portfolioData } from '../data/portfolioData';
-import { Mail, Phone, Linkedin, Github, Send, FileText } from 'lucide-react';
+import { Mail, Linkedin, Github, Send, FileText } from 'lucide-react';
 
 export default function ContactPage() {
   return (
@@ -23,7 +22,7 @@ export default function ContactPage() {
 
           <div className="grid md:grid-cols-2 gap-4 mb-8">
             <a
-              href={`mailto:${portfolioData.email}`}
+              href="mailto:itskeeratkaur@gmail.com"
               className="flex items-center gap-4 p-5 bg-white hover:bg-red-50 rounded-xl border-2 border-gray-800 shadow-md hover:shadow-xl transition-all transform hover:scale-105 active:scale-95"
             >
               <div className="p-3 bg-red-200 rounded-lg border-2 border-gray-800">
@@ -31,25 +30,12 @@ export default function ContactPage() {
               </div>
               <div className="flex-1">
                 <p className="font-handwriting font-bold text-gray-800 mb-1">Email</p>
-                <p className="font-handwriting text-sm text-gray-600 break-all">{portfolioData.email}</p>
+                <p className="font-handwriting text-sm text-gray-600 break-all">itskeeratkaur@gmail.com</p>
               </div>
             </a>
 
             <a
-              href={`tel:${portfolioData.phone}`}
-              className="flex items-center gap-4 p-5 bg-white hover:bg-green-50 rounded-xl border-2 border-gray-800 shadow-md hover:shadow-xl transition-all transform hover:scale-105 active:scale-95"
-            >
-              <div className="p-3 bg-green-200 rounded-lg border-2 border-gray-800">
-                <Phone size={24} className="text-gray-800" />
-              </div>
-              <div className="flex-1">
-                <p className="font-handwriting font-bold text-gray-800 mb-1">Phone</p>
-                <p className="font-handwriting text-sm text-gray-600">{portfolioData.phone}</p>
-              </div>
-            </a>
-
-            <a
-              href={`https://${portfolioData.linkedin}`}
+              href="https://linkedin.com/in/keeratkaurbhatia"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 p-5 bg-white hover:bg-blue-50 rounded-xl border-2 border-gray-800 shadow-md hover:shadow-xl transition-all transform hover:scale-105 active:scale-95"
@@ -59,22 +45,22 @@ export default function ContactPage() {
               </div>
               <div className="flex-1">
                 <p className="font-handwriting font-bold text-gray-800 mb-1">LinkedIn</p>
-                <p className="font-handwriting text-sm text-gray-600 break-all">{portfolioData.linkedin}</p>
+                <p className="font-handwriting text-sm text-gray-600 break-all">linkedin.com/in/keeratkaurbhatia</p>
               </div>
             </a>
 
             <a
-              href={`https://${portfolioData.github}`}
+              href="https://github.com/keeratkaurbhatia"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-4 p-5 bg-white hover:bg-gray-50 rounded-xl border-2 border-gray-800 shadow-md hover:shadow-xl transition-all transform hover:scale-105 active:scale-95"
+              className="flex items-center gap-4 p-5 bg-white hover:bg-gray-50 rounded-xl border-2 border-gray-800 shadow-md hover:shadow-xl transition-all transform hover:scale-105 active:scale-95 md:col-span-2"
             >
               <div className="p-3 bg-gray-200 rounded-lg border-2 border-gray-800">
                 <Github size={24} className="text-gray-800" />
               </div>
               <div className="flex-1">
                 <p className="font-handwriting font-bold text-gray-800 mb-1">GitHub</p>
-                <p className="font-handwriting text-sm text-gray-600 break-all">{portfolioData.github}</p>
+                <p className="font-handwriting text-sm text-gray-600 break-all">github.com/keeratkaurbhatia</p>
               </div>
             </a>
           </div>

@@ -17,6 +17,7 @@ const stickyNotes: StickyNote[] = [
   { id: 'about', label: 'About Me', color: '#ff9b9b', rotation: 'rotate-1' },
   { id: 'experience', label: 'Experience', color: '#a8e6cf', rotation: '-rotate-1' },
   { id: 'projects', label: 'Projects', color: '#ffc3a0', rotation: 'rotate-2' },
+  { id: 'extracurriculars', label: 'Beyond Code', color: '#f9d5e5', rotation: '-rotate-2' },
   { id: 'skills', label: 'Skills', color: '#b4a7d6', rotation: '-rotate-3' },
   { id: 'contact', label: 'Contact', color: '#ffabab', rotation: 'rotate-1' }
 ];

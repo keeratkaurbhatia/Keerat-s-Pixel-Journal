@@ -1,8 +1,33 @@
 import React from 'react';
-import { portfolioData } from '../data/portfolioData';
-import { ExternalLink, Sparkles } from 'lucide-react';
+import { ExternalLink, Sparkles, Clock } from 'lucide-react';
 
 export default function ProjectsPage() {
+  const featuredProject = {
+    title: "Punjabi Proverb Translator: Akhan 'ch Akhaan",
+    description: "Building an NLP tool leveraging the Llama3 model via Groq API to interpret Punjabi proverbs into English, preserving metaphorical and cultural meaning. 650+ proverbs pre-processed for fast, responsive experience. Uses literal translation + BLEURT score to retain original tone and imagery. Includes Gurmukhi transliteration for accessibility.",
+    technologies: ["Python", "NLP", "BLEURT", "Streamlit", "Llama3", "Groq API"],
+    link: "https://akhan-ch-akhaan.streamlit.app",
+    status: "In Progress"
+  };
+
+  const comingSoonProjects = [
+    {
+      title: "Budget Baes",
+      subtitle: "Gen Z Budgeting App",
+      color: "#fff9e6"
+    },
+    {
+      title: "Chai Shai",
+      subtitle: "Wellness Productivity App",
+      color: "#e6f9ff"
+    },
+    {
+      title: "Interactive Portfolio Room",
+      subtitle: "3D Virtual Experience",
+      color: "#ffe6f0"
+    }
+  ];
+
   return (
     <div className="min-h-screen p-4 py-24">
       <div className="max-w-6xl mx-auto">
@@ -15,61 +40,93 @@ export default function ProjectsPage() {
             Projects
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            {portfolioData.projects.map((project, index) => (
-              <div
-                key={index}
-                className="group relative p-6 bg-white rounded-2xl border-2 border-gray-800 shadow-lg hover:shadow-2xl transition-all"
-                style={{
-                  transform: index % 2 === 0 ? 'rotate(-0.5deg)' : 'rotate(0.5deg)',
-                  background: index % 4 === 0 ? '#fff9e6' :
-                             index % 4 === 1 ? '#e6f9ff' :
-                             index % 4 === 2 ? '#ffe6f0' : '#f0ffe6'
-                }}
-              >
-                <div className="absolute -top-3 -right-3 w-10 h-10 bg-gradient-to-br from-yellow-300 to-orange-300 rounded-full border-2 border-gray-800 flex items-center justify-center">
-                  <Sparkles size={18} className="text-gray-800" />
-                </div>
-
-                <h3 className="font-handwriting text-2xl font-bold text-gray-800 mb-3 pr-8">
-                  {project.title}
-                </h3>
-
-                <p className="font-handwriting text-gray-700 leading-relaxed mb-4">
-                  {project.description}
-                </p>
-
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.technologies.map((tech, techIndex) => (
-                    <span
-                      key={techIndex}
-                      className="px-3 py-1 bg-gray-800 text-white rounded-full font-handwriting text-xs border-2 border-gray-800"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-
-                {project.link && (
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-200 to-blue-300 hover:from-blue-300 hover:to-blue-400 rounded-lg border-2 border-gray-800 font-handwriting font-bold transition-all hover:scale-105 active:scale-95 shadow-md"
-                  >
-                    View Project
-                    <ExternalLink size={16} />
-                  </a>
-                )}
-
-                <div className="absolute -bottom-2 -left-2 opacity-10 pointer-events-none">
-                  <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
-                    <circle cx="25" cy="25" r="20" stroke="#333" strokeWidth="2" strokeDasharray="3 3"/>
-                    <path d="M15 25 L20 20 L25 30 L30 15 L35 25" stroke="#333" strokeWidth="2"/>
-                  </svg>
-                </div>
+          <div className="mb-8">
+            <h3 className="font-handwriting text-2xl font-bold text-gray-700 mb-4">Featured Project</h3>
+            <div
+              className="group relative p-6 bg-white rounded-2xl border-2 border-gray-800 shadow-lg hover:shadow-2xl transition-all"
+              style={{
+                transform: 'rotate(-0.5deg)',
+                background: '#f0ffe6'
+              }}
+            >
+              <div className="absolute -top-3 -right-3 w-10 h-10 bg-gradient-to-br from-yellow-300 to-orange-300 rounded-full border-2 border-gray-800 flex items-center justify-center">
+                <Sparkles size={18} className="text-gray-800" />
               </div>
-            ))}
+
+              <div className="flex items-start justify-between mb-3">
+                <h3 className="font-handwriting text-2xl md:text-3xl font-bold text-gray-800 pr-8">
+                  {featuredProject.title}
+                </h3>
+                <span className="px-3 py-1 bg-blue-200 rounded-full font-handwriting text-xs font-bold border-2 border-gray-800 whitespace-nowrap">
+                  {featuredProject.status}
+                </span>
+              </div>
+
+              <p className="font-handwriting text-gray-700 leading-relaxed mb-4">
+                {featuredProject.description}
+              </p>
+
+              <div className="flex flex-wrap gap-2 mb-4">
+                {featuredProject.technologies.map((tech, techIndex) => (
+                  <span
+                    key={techIndex}
+                    className="px-3 py-1 bg-gray-800 text-white rounded-full font-handwriting text-xs border-2 border-gray-800"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              <a
+                href={featuredProject.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-200 to-blue-300 hover:from-blue-300 hover:to-blue-400 rounded-lg border-2 border-gray-800 font-handwriting font-bold transition-all hover:scale-105 active:scale-95 shadow-md"
+              >
+                View Project
+                <ExternalLink size={16} />
+              </a>
+
+              <div className="absolute -bottom-2 -left-2 opacity-10 pointer-events-none">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <circle cx="25" cy="25" r="20" stroke="#333" strokeWidth="2" strokeDasharray="3 3"/>
+                  <path d="M15 25 L20 20 L25 30 L30 15 L35 25" stroke="#333" strokeWidth="2"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="font-handwriting text-2xl font-bold text-gray-700 mb-4">Coming Soon</h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              {comingSoonProjects.map((project, index) => (
+                <div
+                  key={index}
+                  className="relative p-6 bg-white rounded-2xl border-2 border-gray-800 shadow-lg hover:shadow-xl transition-all"
+                  style={{
+                    transform: index % 2 === 0 ? 'rotate(-0.5deg)' : 'rotate(0.5deg)',
+                    background: project.color
+                  }}
+                >
+                  <div className="absolute -top-3 -right-3 w-10 h-10 bg-gray-300 rounded-full border-2 border-gray-800 flex items-center justify-center">
+                    <Clock size={18} className="text-gray-700" />
+                  </div>
+
+                  <h4 className="font-handwriting text-xl font-bold text-gray-800 mb-2 pr-8">
+                    {project.title}
+                  </h4>
+                  <p className="font-handwriting text-sm text-gray-600 mb-4">
+                    {project.subtitle}
+                  </p>
+
+                  <div className="p-3 bg-white/60 rounded-lg border-2 border-dashed border-gray-400 text-center">
+                    <p className="font-handwriting text-gray-700 font-bold">
+                      Details Coming Soon!
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="mt-8 p-6 bg-gradient-to-r from-purple-100 to-pink-100 rounded-2xl border-2 border-gray-800 text-center">

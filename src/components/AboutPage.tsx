@@ -1,8 +1,24 @@
 import React from 'react';
-import { portfolioData } from '../data/portfolioData';
 import { GraduationCap, Heart } from 'lucide-react';
 
 export default function AboutPage() {
+  const education = [
+    {
+      institution: "Indira Gandhi Delhi Technical University for Women (IGDTUW)",
+      degree: "Bachelor of Technology in Computer Science and Artificial Intelligence",
+      period: "2024-28",
+      cgpa: "9.93",
+      location: "Kashmere Gate, New Delhi"
+    },
+    {
+      institution: "IIT Ropar",
+      degree: "Minor in AI",
+      period: "2024-25",
+      cgpa: "9.5",
+      location: "Ropar, Punjab"
+    }
+  ];
+
   return (
     <div className="min-h-screen p-4 py-24">
       <div className="max-w-4xl mx-auto">
@@ -17,8 +33,14 @@ export default function AboutPage() {
 
           <div className="space-y-6">
             <div className="p-6 bg-yellow-50 rounded-2xl border-2 border-dashed border-gray-400">
-              <p className="font-handwriting text-lg text-gray-800 leading-relaxed whitespace-pre-line">
-                {portfolioData.about}
+              <p className="font-handwriting text-lg text-gray-800 leading-relaxed">
+                Hey there! I'm Keerat, a first-year Computer Science and AI student at IGDTUW with a minor in AI from IIT Ropar. I'm passionate about building things that matter—whether it's exploring Explainable AI in melanoma detection research, developing full-stack web applications, or designing interfaces that feel like a warm hug.
+              </p>
+              <p className="font-handwriting text-lg text-gray-800 leading-relaxed mt-4">
+                I love diving into creative projects that blend tech with storytelling. From translating Punjabi proverbs with NLP to designing quirky productivity apps with a desi twist, I'm all about making tech more human and accessible.
+              </p>
+              <p className="font-handwriting text-lg text-gray-800 leading-relaxed mt-4">
+                When I'm not coding, you'll find me writing for my college's literary society, debating at MUN conferences, or doodling in my diary (which inspired this very website!). I believe in learning by doing, staying curious, and adding a sprinkle of whimsy to everything I create.
               </p>
             </div>
 
@@ -34,7 +56,7 @@ export default function AboutPage() {
               </h3>
 
               <div className="space-y-4">
-                {portfolioData.education.map((edu, index) => (
+                {education.map((edu, index) => (
                   <div
                     key={index}
                     className="p-5 bg-white rounded-xl border-2 border-gray-800 shadow-md hover:shadow-xl transition-shadow"
@@ -48,15 +70,16 @@ export default function AboutPage() {
                     <p className="font-handwriting text-gray-700 mb-1">
                       {edu.degree}
                     </p>
+                    <p className="font-handwriting text-sm text-gray-500 mb-2">
+                      {edu.location}
+                    </p>
                     <div className="flex justify-between items-center mt-2">
                       <p className="font-handwriting text-sm text-gray-600">
                         {edu.period}
                       </p>
-                      {edu.cgpa && (
-                        <span className="px-3 py-1 bg-green-200 rounded-full font-handwriting text-sm font-bold border-2 border-gray-800">
-                          CGPA: {edu.cgpa}
-                        </span>
-                      )}
+                      <span className="px-3 py-1 bg-green-200 rounded-full font-handwriting text-sm font-bold border-2 border-gray-800">
+                        CGPA: {edu.cgpa}
+                      </span>
                     </div>
                   </div>
                 ))}
