@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { MessageCircle, X } from 'lucide-react';
 import { chatbotTopics } from '../data/portfolioData';
+import elephantImg from '../assets/elephant.jpg';
 
 export default function Ellie() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,9 +20,16 @@ export default function Ellie() {
           }}
         >
           <div className="relative w-20 h-20">
-            <div className="w-full h-full rounded-full bg-gradient-to-br from-purple-200 to-pink-200 border-2 border-gray-800 flex items-center justify-center text-6xl">
-              🐘
+            <div className="w-full h-full rounded-full bg-gradient-to-br from-purple-200 to-pink-200 border-2 border-gray-800 flex items-center justify-center overflow-hidden">
+              <div className="bg-white/80 rounded-full flex items-center justify-center w-full h-full">
+                <img
+                  src={elephantImg}
+                  alt="Cute elephant"
+                  className="object-contain w-[85%] h-[85%]"
+                />
+              </div>
             </div>
+
             <div className="absolute -top-1 -right-1 bg-red-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold animate-pulse">
               <MessageCircle size={14} />
             </div>
@@ -37,7 +45,15 @@ export default function Ellie() {
           <div className="bg-gradient-to-r from-yellow-200 to-yellow-300 p-4 border-b-4 border-gray-800 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-200 to-pink-200 border-2 border-gray-800 flex items-center justify-center text-3xl">
-                🐘
+                 <div className="w-full h-full rounded-full bg-gradient-to-br from-purple-200 to-pink-200 border-2 border-gray-800 flex items-center justify-center overflow-hidden">
+              <div className="bg-white/80 rounded-full flex items-center justify-center w-full h-full">
+                <img
+                  src={elephantImg}
+                  alt="Cute elephant"
+                  className="object-contain w-[85%] h-[85%]"
+                />
+              </div>
+            </div>
               </div>
               <div>
                 <h3 className="font-handwriting text-xl font-bold text-gray-800">Ellie</h3>

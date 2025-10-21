@@ -87,19 +87,7 @@ export default function SkillsPage() {
             ))}
           </div>
 
-          <div className="mt-8 grid md:grid-cols-2 gap-4">
-            <div className="p-5 bg-gradient-to-br from-purple-100 to-pink-100 rounded-xl border-2 border-gray-800 transform -rotate-1">
-              <p className="font-handwriting text-gray-800 text-center">
-                <span className="font-bold text-lg">Learning:</span> Always exploring new technologies and methodologies!
-              </p>
-            </div>
-
-            <div className="p-5 bg-gradient-to-br from-orange-100 to-yellow-100 rounded-xl border-2 border-gray-800 transform rotate-1">
-              <p className="font-handwriting text-gray-800 text-center">
-                <span className="font-bold text-lg">Passion:</span> Making tech more human and accessible!
-              </p>
-            </div>
-          </div>
+          
 
           <div className="absolute bottom-4 left-4 opacity-20">
             <svg width="80" height="80" viewBox="0 0 80 80" fill="none">

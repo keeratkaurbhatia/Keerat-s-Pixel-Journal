@@ -14,7 +14,7 @@ export default function AboutPage() {
       institution: "IIT Ropar",
       degree: "Minor in AI",
       period: "2024-25",
-      cgpa: "9.5",
+      cgpa: "7.5",
       location: "Ropar, Punjab"
     }
   ];
@@ -33,14 +33,17 @@ export default function AboutPage() {
 
           <div className="space-y-6">
             <div className="p-6 bg-yellow-50 rounded-2xl border-2 border-dashed border-gray-400">
-              <p className="font-handwriting text-lg text-gray-800 leading-relaxed">
-                Hey there! I'm Keerat, a first-year Computer Science and AI student at IGDTUW with a minor in AI from IIT Ropar. I'm passionate about building things that matter—whether it's exploring Explainable AI in melanoma detection research, developing full-stack web applications, or designing interfaces that feel like a warm hug.
+              <p className="font-handwriting text-lg text-gray-800 leading-relaxed font-bold italic">
+                I don't chase perfection. I chase confusion, stress, and that tiny little click when it all finally makes sense.
               </p>
               <p className="font-handwriting text-lg text-gray-800 leading-relaxed mt-4">
-                I love diving into creative projects that blend tech with storytelling. From translating Punjabi proverbs with NLP to designing quirky productivity apps with a desi twist, I'm all about making tech more human and accessible.
+                Hi there! I'm Keerat, an engineering student with a soft spot for hard challenges. I gravitate towards messy problems annd unfinished thoughts. Whether it's debugging code or brainstorming ways to build something thoughtful, I live for the thrill of figuring things out.
               </p>
               <p className="font-handwriting text-lg text-gray-800 leading-relaxed mt-4">
-                When I'm not coding, you'll find me writing for my college's literary society, debating at MUN conferences, or doodling in my diary (which inspired this very website!). I believe in learning by doing, staying curious, and adding a sprinkle of whimsy to everything I create.
+               My current interests lie at the intersection of AI, web development, research, and human-centered design. I'm focused on sharpening my fundamentals and exploring opportunities that push me to think deeply, learn continuously, and build with intent.
+              </p>
+              <p className="font-handwriting text-lg text-gray-800 leading-relaxed mt-4">
+                It's all a work in progress, and so am I.
               </p>
             </div>
 
@@ -87,8 +90,9 @@ export default function AboutPage() {
             </div>
 
             <div className="mt-8 p-6 bg-gradient-to-br from-pink-100 to-purple-100 rounded-2xl border-2 border-gray-800">
-              <p className="font-handwriting text-lg text-gray-800 text-center italic">
-                "I believe in learning by doing, staying curious, and adding a sprinkle of whimsy to everything I create."
+              <p className="font-handwriting text-lg text-gray-800 text-center">
+Here's to embracing the chaos, one line of code at a time!
+              
               </p>
             </div>
           </div>

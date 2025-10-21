@@ -16,9 +16,17 @@ export default function ExtracurricularsPage() {
       title: "Personal Blog",
       organization: "Self-Published",
       period: "Ongoing",
-      description: "Maintaining a personal blog where I share my thoughts on technology, creativity, and life as a CS student. Writing about projects, experiences, and everything in between.",
-      link: "#",
+      description: "Maintaining a personal blog where I share my thoughts on anything and everything— it's my creative outlet and a space to connect with like-minded souls.",
+      link: "https://inkedhandsofmine.blogspot.com/",
       color: "from-purple-100 to-pink-100"
+    },
+    {
+      icon: <PenTool size={32} className="text-red-600" />,
+      title: "Editor",
+      organization: "IGDTUW Insider (College Newspaper)",
+      period: "September 2025 – Present",
+      description: "Working as an editor for IGDTUW Insider, curating articles, guiding contributors, and shaping the voice of the college newspaper.",
+      color: "from-red-100 to-pink-100"
     },
     {
       icon: <Users size={32} className="text-blue-600" />,
@@ -98,7 +106,7 @@ export default function ExtracurricularsPage() {
 
           <div className="mt-8 p-6 bg-gradient-to-r from-pink-100 to-purple-100 rounded-2xl border-2 border-gray-800 text-center">
             <p className="font-handwriting text-lg text-gray-800">
-              Beyond code: Writing, debating, and telling stories!
+              My passions; the essence of who I am.
             </p>
           </div>
 

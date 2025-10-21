@@ -36,7 +36,7 @@ export default function HomePage() {
           <div className="text-center mb-8 flex items-center justify-center gap-4 flex-wrap">
             <p className="font-handwriting text-xl md:text-2xl text-gray-700 leading-relaxed max-w-2xl">
               Welcome to my little corner of the internet! I'm a CS & AI student who loves building things that blend creativity with code.
-              Grab a virtual chai and explore my work!
+              Grab a virtual chai and hop onboard!
             </p>
 
             <button
@@ -70,7 +70,7 @@ export default function HomePage() {
               {chaiLevel === 0 && (
                 <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 whitespace-nowrap">
                   <span className="bg-green-200 px-3 py-1 rounded-full text-sm font-handwriting font-bold border-2 border-gray-800">
-                    Yum! 😋
+                    Yum!
                   </span>
                 </div>
               )}
@@ -107,21 +107,21 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-3 gap-4 mt-8">
             <div className="p-4 bg-red-100 rounded-xl border-2 border-gray-800 transform -rotate-1 hover:rotate-0 transition-transform">
-              <h3 className="font-handwriting font-bold text-lg mb-2 text-gray-800">AI & Research</h3>
+              <h3 className="font-handwriting font-bold text-lg mb-2 text-gray-800">AI Adventure</h3>
               <p className="font-handwriting text-sm text-gray-700">
-                Exploring XAI techniques in healthcare & NLP projects
+                Experimenting with GenAI & XAI ML models
               </p>
             </div>
 
             <div className="p-4 bg-green-100 rounded-xl border-2 border-gray-800 transform rotate-1 hover:rotate-0 transition-transform">
-              <h3 className="font-handwriting font-bold text-lg mb-2 text-gray-800">Full-Stack Dev</h3>
+              <h3 className="font-handwriting font-bold text-lg mb-2 text-gray-800">Web Wizardry</h3>
               <p className="font-handwriting text-sm text-gray-700">
-                Building web apps with React, Flask & beyond
+                Turning ideas into playful, responsive web experiences.
               </p>
             </div>
 
             <div className="p-4 bg-yellow-100 rounded-xl border-2 border-gray-800 transform -rotate-1 hover:rotate-0 transition-transform">
-              <h3 className="font-handwriting font-bold text-lg mb-2 text-gray-800">UI/UX Design</h3>
+              <h3 className="font-handwriting font-bold text-lg mb-2 text-gray-800">Design Playground</h3>
               <p className="font-handwriting text-sm text-gray-700">
                 Crafting delightful user experiences in Figma
               </p>

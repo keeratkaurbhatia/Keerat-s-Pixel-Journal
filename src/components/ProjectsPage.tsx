@@ -22,8 +22,8 @@ export default function ProjectsPage() {
       color: "#e6f9ff"
     },
     {
-      title: "Interactive Portfolio Room",
-      subtitle: "3D Virtual Experience",
+      title: "KolamSecure",
+      subtitle: "Blending Art & Cybersecurity",
       color: "#ffe6f0"
     }
   ];
@@ -131,7 +131,7 @@ export default function ProjectsPage() {
 
           <div className="mt-8 p-6 bg-gradient-to-r from-purple-100 to-pink-100 rounded-2xl border-2 border-gray-800 text-center">
             <p className="font-handwriting text-lg text-gray-800">
-              Each project tells a story and solves a real problem!
+              Trying to build things that matter!
             </p>
           </div>
 

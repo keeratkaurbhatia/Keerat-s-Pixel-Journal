@@ -69,8 +69,8 @@ export default function ContactPage() {
             <div className="flex items-center justify-center gap-4">
               <FileText size={32} className="text-gray-800" />
               <div>
-                <p className="font-handwriting text-2xl font-bold text-gray-800">Resume Brewing Up! ☕</p>
-                <p className="font-handwriting text-sm text-gray-600">Coming soon...</p>
+                <p className="font-handwriting text-2xl font-bold text-gray-800">Resume Brewing Up!</p>
+                <p className="font-handwriting text-sm text-gray-600">Coming soon... 🍵</p>
               </div>
             </div>
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer" style={{
@@ -83,7 +83,7 @@ export default function ContactPage() {
             <p className="font-handwriting text-lg text-gray-800 mb-2">
               Looking forward to hearing from you!
             </p>
-            <p className="font-handwriting text-3xl">✨</p>
+            <p className="font-handwriting text-3xl">🌻</p>
           </div>
 
           <div className="absolute bottom-4 left-4 opacity-20">
