@@ -34,7 +34,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen diary-background pt-5">
+    <div className="min-h-screen diary-background pt-28">
       <StickyNoteNav currentPage={currentPage} onNavigate={setCurrentPage} />
 
       <main className="transition-opacity duration-500">
