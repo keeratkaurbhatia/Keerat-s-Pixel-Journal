@@ -11,7 +11,7 @@ export default function HomePage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-4">
+    <div className="min-h-screen flex items-center justify-center p-4 py-24">
       <div className="max-w-4xl w-full">
         <div className="diary-page p-8 md:p-12 relative">
           <div className="absolute top-4 right-4 opacity-20">
