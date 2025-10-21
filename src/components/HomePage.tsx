@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Github, Linkedin, Mail, FileText } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 export default function HomePage() {
   const [chaiLevel, setChaiLevel] = useState(3);
@@ -102,15 +102,6 @@ export default function HomePage() {
             >
               <Github size={18} />
               GitHub
-            </a>
-            <a
-              href="/Keerat's Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-2 bg-green-200 hover:bg-green-300 rounded-lg border-2 border-gray-800 font-handwriting transition-all hover:scale-105 active:scale-95 shadow-md"
-            >
-              <FileText size={18} />
-              Resume
             </a>
           </div>
 

@@ -65,20 +65,19 @@ export default function ContactPage() {
             </a>
           </div>
 
-          <a
-            href="/Keerat's Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block w-full p-6 bg-gradient-to-r from-purple-200 to-pink-200 hover:from-purple-300 hover:to-pink-300 rounded-2xl border-2 border-gray-800 shadow-lg hover:shadow-2xl transition-all transform hover:scale-105 active:scale-95"
-          >
+          <div className="block w-full p-6 bg-gradient-to-r from-purple-200 to-pink-200 rounded-2xl border-2 border-gray-800 shadow-lg relative overflow-hidden">
             <div className="flex items-center justify-center gap-4">
               <FileText size={32} className="text-gray-800" />
               <div>
-                <p className="font-handwriting text-2xl font-bold text-gray-800">Download My Resume</p>
-                <p className="font-handwriting text-sm text-gray-600">Get the full picture!</p>
+                <p className="font-handwriting text-2xl font-bold text-gray-800">Resume Brewing Up! ☕</p>
+                <p className="font-handwriting text-sm text-gray-600">Coming soon...</p>
               </div>
             </div>
-          </a>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer" style={{
+              animation: 'shimmer 2s infinite',
+              backgroundSize: '200% 100%'
+            }}></div>
+          </div>
 
           <div className="mt-8 p-6 bg-white rounded-2xl border-2 border-gray-800 text-center">
             <p className="font-handwriting text-lg text-gray-800 mb-2">
